@@ -17,7 +17,7 @@ import com.kyper.yarn.VirtualMachine.OptionsHandler;
 
 public class Dialogue {
 
-	public VariableStorage continuity;
+	protected VariableStorage continuity;
 
 	public YarnLogger debug_logger;
 	public YarnLogger error_logger;
@@ -820,7 +820,7 @@ public class Dialogue {
 	}
 
 	/**
-	 * variable storage TODO: try to use {@link com.kyper.yarn.UserData UserData}
+	 * variable storage TODO: try to use {@link com.kyper.yarn.DialogueData UserData}
 	 */
 	public static interface VariableStorage {
 		public void setValue(String name, Value value);
